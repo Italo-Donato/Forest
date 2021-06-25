@@ -1,5 +1,6 @@
 public class Item {
     private int key;
+    public static int cont = 0;
 
     public Item(int key) {
         this.key = key;
@@ -7,6 +8,7 @@ public class Item {
 
     public int compareTo(Item it) {
         Item item = it;
+        cont++;
         if (this.key < item.key) //to right
             return -1;
         else if (this.key > item.key) //to left
